@@ -22,7 +22,7 @@ const authFormSchema = (type:FormType)=>{
     })
 }
 
-const AuthForm = ({type}):{type:FormType} => {
+const AuthForm = ({type}:{type:FormType}) => {
     const formSchema =authFormSchema(type);
     const router = useRouter();
     // 1. Define your form.
